@@ -1,0 +1,15 @@
+name: Greetings to @majesticcoding
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Send Greeting
+      run: echo "Hello @majesticcoding YouTube Channel! 🚀"
